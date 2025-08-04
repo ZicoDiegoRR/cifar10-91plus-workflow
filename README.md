@@ -16,7 +16,7 @@ A complete PyTorch workflow for CIFAR-10 image classification, reaching over 91%
 
 ✅ Early stopping to prevent overfitting
 
-✅ High test accuracy (~91.6%) with ~19 million parameters
+✅ High test accuracy (91+%) with 19.5 million parameters
 
 ✅ Clear training curves visualization
 
