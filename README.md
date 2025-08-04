@@ -43,7 +43,7 @@ The architecture consists of:
 
 ## 🛠️ Training Details
 
-- Optimizer optimizer    : `SGD` with `momentum` and `weight_decay`
+- Optimizer              : `SGD` with `momentum` and `weight_decay`
 
 - Learning rate scheduler: `ReduceLROnPlateau` (monitors test loss)
 
