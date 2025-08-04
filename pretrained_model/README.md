@@ -2,7 +2,7 @@
 
 This model was trained previously with the current workflow.
 Here's the description:
-- Epoch                   = 84
+- Epoch                   = 87
 - Optimizer               = `SGD` (with `momentum`)
 - Learning rate           = 0.01
 - Learning rate scheduler = `ReduceLROnPlateau`
