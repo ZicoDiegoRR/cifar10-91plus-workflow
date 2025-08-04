@@ -30,7 +30,7 @@ This project uses the CIFAR-10 dataset, consisting of 60,000 32x32 RGB images in
 
 ---
 
-## OptimizerArchitecture
+## 🚀 Architecture
 
 The architecture consists of:
 - 9 convolutional layers with increasing feature maps (32 → 1024)
