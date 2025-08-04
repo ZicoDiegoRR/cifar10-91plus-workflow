@@ -7,12 +7,19 @@ A complete PyTorch workflow for CIFAR-10 image classification, reaching over 91%
 ## 📌 Features 
 
 ✅ Custom-built CNN architecture (no transfer learning)
+
 ✅ Data normalization and augmentation
+
 ✅ Dropout and Batch Normalization
+
 ✅ Learning rate scheduling with `ReduceLROnPlateau`
+
 ✅ Early stopping to prevent overfitting
+
 ✅ High test accuracy (~91.6%) with ~19 million parameters
+
 ✅ Clear training curves visualization
+
 ✅ Fully reproducible training and evaluation scripts
 
 ---
@@ -37,9 +44,13 @@ The architecture consists of:
 ## 🛠️ Training Details
 
 Optimizer              : `SGD` with `momentum` and `weight_decay`
+
 Learning rate scheduler: `ReduceLROnPlateau` (monitors test loss)
+
 Loss function          : `CrossEntropyLoss`
+
 Data augmentation      : Random cropping and horizontal flipping
+
 Early stopping         : Stops training when test loss stops improving
 
 ---
