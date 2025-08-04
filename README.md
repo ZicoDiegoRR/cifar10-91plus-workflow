@@ -30,7 +30,7 @@ This project uses the CIFAR-10 dataset, consisting of 60,000 32x32 RGB images in
 
 ---
 
-🚀 Model Architecture
+## OptimizerArchitecture
 
 The architecture consists of:
 - 9 convolutional layers with increasing feature maps (32 → 1024)
@@ -43,15 +43,15 @@ The architecture consists of:
 
 ## 🛠️ Training Details
 
-Optimizer              : `SGD` with `momentum` and `weight_decay`
+- Optimizer optimizer    : `SGD` with `momentum` and `weight_decay`
 
-Learning rate scheduler: `ReduceLROnPlateau` (monitors test loss)
+- Learning rate scheduler: `ReduceLROnPlateau` (monitors test loss)
 
-Loss function          : `CrossEntropyLoss`
+- Loss function          : `CrossEntropyLoss`
 
-Data augmentation      : Random cropping and horizontal flipping
+- Data augmentation      : Random cropping and horizontal flipping
 
-Early stopping         : Stops training when test loss stops improving
+- Early stopping         : Stops training when test loss stops improving
 
 ---
 
