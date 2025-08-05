@@ -33,7 +33,7 @@ This project uses the CIFAR-10 dataset, consisting of 60,000 32x32 RGB images in
 ## 🚀 Architecture
 
 The architecture consists of:
-- 9 convolutional layers with increasing feature maps (32 → 1024)
+- 10 convolutional layers with increasing feature maps (32 → 1024)
 - Interleaved `BatchNorm2d` and `ReLU` activations
 - `AdaptiveAvgPool2d` to handle spatial size reduction
 - Fully connected classifier with `Dropout` for regularization
