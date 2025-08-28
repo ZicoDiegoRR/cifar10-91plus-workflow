@@ -1,6 +1,6 @@
-# CIFAR-10 Custom CNN Architecture with 91+% Test Accuracy
+# CIFAR-10 Custom CNN Architecture with 93+% Test Accuracy
 
-A complete PyTorch workflow for CIFAR-10 image classification, reaching over 91% test accuracy with a fully custom convolutional neural network — no pretrained architectures like ResNet or VGG. This project demonstrates building, training, and evaluating deep CNNs from scratch, highlighting best practices for data preprocessing, regularization, and optimization. 
+A complete PyTorch workflow for CIFAR-10 image classification, reaching over 93% test accuracy with a fully custom convolutional neural network — no pretrained architectures like ResNet or VGG. This project demonstrates building, training, and evaluating deep CNNs from scratch, highlighting best practices for data preprocessing, regularization, and optimization. 
 
 ---
 
@@ -12,11 +12,11 @@ A complete PyTorch workflow for CIFAR-10 image classification, reaching over 91%
 
 ✅ Dropout and Batch Normalization
 
-✅ Learning rate scheduling with `ReduceLROnPlateau`
+✅ Learning rate scheduling with `CosineAnnealingLR`
 
 ✅ Early stopping to prevent overfitting
 
-✅ High test accuracy (91+%) with 19.5 million parameters
+✅ High test accuracy (93+%) with 20 million parameters
 
 ✅ Clear training curves visualization
 
@@ -33,11 +33,11 @@ This project uses the CIFAR-10 dataset, consisting of 60,000 32x32 RGB images in
 ## 🚀 Architecture
 
 The architecture consists of:
-- 10 convolutional layers with increasing feature maps (32 → 1024)
-- Interleaved `BatchNorm2d` and `ReLU` activations
+- 12 convolutional layers with increasing feature maps (32 → 1024)
+- Interleaved `BatchNorm2d` and `SiLU` activations
 - `AdaptiveAvgPool2d` to handle spatial size reduction
 - Fully connected classifier with `Dropout` for regularization
-- Total parameters: 19.5 million
+- Total parameters: 20 million
 
 ---
 
@@ -45,7 +45,7 @@ The architecture consists of:
 
 - Optimizer              : `SGD` with `momentum` and `weight_decay`
 
-- Learning rate scheduler: `ReduceLROnPlateau` (monitors test loss)
+- Learning rate scheduler: `CosineAnnealingLR` (adjust learning rate)
 
 - Loss function          : `CrossEntropyLoss`
 
